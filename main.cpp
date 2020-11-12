@@ -9,5 +9,8 @@ double my_pow(double numb, unsigned int degree)
    {
       result *= numb;
    }
+   if(result<0 && degree%2==0)
+      return result*-1;
+   else
    return result;
 }
